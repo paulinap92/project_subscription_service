@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Alejandro",
+    "surname": "García",
+    "origin": "PENINSULA",
+    "birthdate": "1990-05-12",
+    "id_": 1
+  },
+  {
+    "name": "Sofia",
+    "surname": "Rodríguez",
+    "origin": "CEUTA OR MELILLA TERITORY",
+    "birthdate": "1985-08-23",
+    "id_": 2
+  },
+  {
+    "name": "Paweł",
+    "surname": "Bączkowski",
+    "origin": "BALEARICS ISLANDS",
+    "birthdate": "1989-02-17",
+    "id_": 3
+  },
+  {
+    "name": "Isabella",
+    "surname": "López",
+    "origin": "CANARY ISLANDS",
+    "birthdate": "1978-11-30",
+    "id_": 4
+  },
+  {
+    "name": "Eduardo",
+    "surname": "Fernández",
+    "origin": "PENINSULA",
+    "birthdate": "1998-06-05",
+    "id_": 5
+  },
+  {
+    "name": "Lucia",
+    "surname": "Torres",
+    "origin": "CANARY ISLANDS",
+    "birthdate": "1983-09-18",
+    "id_": 6
+  },
+  {
+    "name": "Mateo",
+    "surname": "Sánchez",
+    "origin": "PENINSULA",
+    "birthdate": "1995-03-25",
+    "id_": 7
+  },
+  {
+    "name": "Valentina",
+    "surname": "Navarro",
+    "origin": "BALEARICS ISLANDS",
+    "birthdate": "1985-12-09",
+    "id_": 8
+  },
+  {
+    "name": "Miguel",
+    "surname": "Ramírez",
+    "origin": "PENINSULA",
+    "birthdate": "2000-01-14",
+    "id_": 9
+  },
+  {
+    "name": "Camila",
+    "surname": "Herrera",
+    "origin": "CEUTA OR MELILLA TERITORY",
+    "birthdate": "1975-04-02",
+    "id_": 10
+  }
+]

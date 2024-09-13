@@ -1,0 +1,18 @@
+[
+    {
+        "User_id": 1,
+        "Service_id": 3,
+        "QuantityMonth": 2,
+        "Discount": 10,
+        "ID": 1,
+        "Active": 0
+    },
+    {
+        "User_id": 2,
+        "Service_id": 4,
+        "QuantityMonth": 1,
+        "Discount": 15,
+        "ID": 2,
+        "Active": 1
+    }
+]

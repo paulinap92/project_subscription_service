@@ -1,0 +1,22 @@
+[
+  {"id": 1, "name": "Delicious Bites", "category": "Food", "price": 29.99},
+  {"id": 2, "name": "Vintage Vineyard", "category": "Wine", "price": 49.99},
+  {"id": 3, "name": "Spice Sensation", "category": "Spices", "price": 12.50},
+  {"id": 4, "name": "Tea Harmony", "category": "Tea", "price": 9.99},
+  {"id": 5, "name": "Gourmet Catering", "category": "Catering", "price": 89.99},
+  {"id": 6, "name": "Premium Coffee", "category": "Coffee", "price": 15.75},
+  {"id": 7, "name": "Cheese Delights", "category": "Cheese", "price": 34.50},
+  {"id": 8, "name": "Sweets Galore", "category": "Food", "price": 19.99},
+  {"id": 9, "name": "Cellar Selection", "category": "Wine", "price": 69.99},
+  {"id": 10, "name": "Exotic Spices", "category": "Spices", "price": 8.99},
+  {"id": 11, "name": "Artisan Tea Blends", "category": "Tea", "price": 14.50},
+  {"id": 12, "name": "Event Catering", "category": "Catering", "price": 129.99},
+  {"id": 13, "name": "Morning Brew", "category": "Coffee", "price": 10.25},
+  {"id": 14, "name": "Cheese Elegance", "category": "Cheese", "price": 39.99},
+  {"id": 15, "name": "Savory Treats", "category": "Food", "price": 24.99},
+  {"id": 16, "name": "Red Wine Bliss", "category": "Wine", "price": 59.99},
+  {"id": 17, "name": "Aromatic Spices", "category": "Spices", "price": 11.75},
+  {"id": 18, "name": "Afternoon Tea", "category": "Tea", "price": 12.99},
+  {"id": 19, "name": "Corporate Catering", "category": "Catering", "price": 179.99},
+  {"id": 20, "name": "Espresso Delight", "category": "Coffee", "price": 18.50}
+]
