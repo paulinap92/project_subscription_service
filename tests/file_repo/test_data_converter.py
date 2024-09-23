@@ -8,6 +8,7 @@ def test_text_converter_works_correct():
     assert TextData([['Alicja','13','Poznan'],['Kazimierz','22','Warszawa']]) == result_to_text_converter
     assert isinstance(result_to_text_converter, TextData)
 
+
 def test_json_converter_works_correct():
     to_json_converter = ToJsonDataConverter()
     result_to_json_converter = to_json_converter.convert(['Alicja,13,Poznan', 'Kazimierz,22,Warszawa'])

@@ -12,6 +12,7 @@ def test_text_data_factory():
     assert isinstance(validator, Validator)
     assert isinstance(converter, Converter)
 
+
 def test_json_data_factory():
     data_factory = FromJsonFileToJsonDataWithExpectedRegexDataFactory(r'\d')
     loader = data_factory.create_data_loader()
