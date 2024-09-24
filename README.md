@@ -1,5 +1,7 @@
 # Subscription Management Service
 
+
+
 ## Project Overview
 
 The Subscription Management SERVICE (SMS) is designed to facilitate the management of user subscriptions to various services. The system supports reading data from both JSON and text files, leveraging the Abstract Factory design pattern to handle different file formats. Users can subscribe to services and generate reports on their subscriptions.
@@ -40,22 +42,46 @@ markdown
 - `service/`: Contains repository classes and services for managing data.
 - `main.py`: The main script for running the project.
 
-## Installation
 
-To set up the project locally, follow these steps:
+### Installation
+
+To set up the project locally using **Poetry**, follow these steps:
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/username/repository.git
+   ```
 
-Ensure you have Python 3.12 or higher installed.
-Usage
+2. Ensure you have Python 3.12 or higher installed.
 
-To run the project and see examples of how the system works, use the following command:
+3. Install **Poetry** if it's not already installed:
+   ```bash
+   pip install poetry
+   ```
 
-bash
+4. Install the project dependencies:
+   ```bash
+   poetry install
+   ```
 
-python app.py 
+**Note:** Poetry will read the `pyproject.toml` file in the repository to install the required packages.
+
+### Usage
+
+To run the project and see how the system works, use the following command:
+
+```bash
+poetry run python app.py
+```
+
+### Adding Dependencies
+
+If you need to add new packages, use:
+
+```bash
+poetry add package_name
+```
+
 
 The app.py script demonstrates how to use the data processors and repositories to manage services, subscriptions, and users.
 ## Example Usage
