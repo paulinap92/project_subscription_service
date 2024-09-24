@@ -79,16 +79,13 @@ If you need to add new packages, use:
 poetry add package_name
 ```
 
-
 The app.py script demonstrates how to use the data processors and repositories to manage services, subscriptions, and users.
 
 ## Example Usage
 
 Here's a breakdown of what the app.py script does:
 
-    File Paths: Specifies file paths for data in different formats:
-
-    python
+File Paths: Specifies file paths for data in different formats:
 
       SERVICE_JSON_FILENAME = 'data/data_service.json'
       SERVICE_CSV_FILENAME = 'data/data_service.csv'
@@ -100,9 +97,6 @@ Here's a breakdown of what the app.py script does:
  
 Create DataProcessors: Initializes data processors for different formats and sources:
 
-
-      python
-
       d1 = DataProcessor.create_processor(DataFormat.TEXT, FactoryType.FROM_SERVICE)
       d2 = DataProcessor.create_processor(DataFormat.JSON, FactoryType.FROM_SERVICE)
       d3 = DataProcessor.create_processor(DataFormat.TEXT, FactoryType.FROM_USER)
@@ -111,8 +105,6 @@ Create DataProcessors: Initializes data processors for different formats and sou
       d6 = DataProcessor.create_processor(DataFormat.JSON, FactoryType.FROM_SUBSCRIPTION)
 
 Process and Print Data: Demonstrates processing of data files and prints the results:
-
-      python
 
       s1 = ServiceRepo(d1.process(SERVICE_CSV_FILENAME))
       print(s1.get_services())
@@ -137,46 +129,42 @@ Process and Print Data: Demonstrates processing of data files and prints the res
 
 UserService Operations: Shows how to create a UserService and perform operations:
 
-      python
-
-    user_service = UserService(u1, s1, ss1)
-    print(user_service.active_subscriptions_report())
+      user_service = UserService(u1, s1, ss1)
+      print(user_service.active_subscriptions_report())
 
 Data Processing
 
 The DataProcessor class handles different data formats:
 
-    TextData: Reads data from CSV files.
-    JsonData: Reads data from JSON files.
+      TextData: Reads data from CSV files.
+      JsonData: Reads data from JSON files.
 
 Example:
-
-      python
 
       processor = DataProcessor.create_processor(DataFormat.TEXT, FactoryType.FROM_SERVICE)
       data = processor.process('data/data_service.csv')
 
 Repository Classes
 
-    ServiceRepo: Manages services with methods to retrieve, update, and delete services.
-    SubscriptionRepo: Manages subscriptions with methods for adding, retrieving, and filtering subscriptions.
-    UserRepo: Manages users with methods to retrieve, delete, and filter users.
+      ServiceRepo: Manages services with methods to retrieve, update, and delete services.
+      SubscriptionRepo: Manages subscriptions with methods for adding, retrieving, and filtering subscriptions.
+      UserRepo: Manages users with methods to retrieve, delete, and filter users.
 
 User Service
 
 The UserService class provides functionalities related to user subscriptions:
 
-    subscriptions_for_user_id(user_id: int): Retrieves subscriptions for a given user ID.
-    users_subscribed_to_service(service_id: int): Lists users subscribed to a given service ID.
-    subscribe_user_to_service(user_id: int, service_id: int, quantity_per_month: int, discount: Decimal = None): Subscribes a user to a service.
-    active_subscriptions_report(): Generates a report of active subscriptions.
+      subscriptions_for_user_id(user_id: int): Retrieves subscriptions for a given user ID.
+      users_subscribed_to_service(service_id: int): Lists users subscribed to a given service ID.
+      subscribe_user_to_service(user_id: int, service_id: int, quantity_per_month: int, discount: Decimal = None): Subscribes a user to a service.
+      active_subscriptions_report(): Generates a report of active subscriptions.
 
 Data Models
 
-    Service: Represents a service with attributes like id_, name, category, and price.
-    Subscription: Represents a subscription with attributes like user_id, service_id, quantity_per_month, discount, id_, and active.
-    User: Represents a user with attributes such as name, surname, origin (from Destination enum), birthdate, and id_.
-    Destination: Enum representing different destinations within Spain.
+      Service: Represents a service with attributes like id_, name, category, and price.
+      Subscription: Represents a subscription with attributes like user_id, service_id, quantity_per_month, discount, id_, and active.
+      User: Represents a user with attributes such as name, surname, origin (from Destination enum), birthdate, and id_.
+      Destination: Enum representing different destinations within Spain.
 
 
 ## License
@@ -187,4 +175,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 For any questions or issues, please contact:
 
-    Email: paulinapiotrowskap@gmail.com
+      Email: paulinapiotrowskap@gmail.com
