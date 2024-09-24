@@ -1,0 +1,36 @@
+Subscription Management System
+
+The aim of the project is to create a subscription management system that supports JSON and text files,
+utilizing an abstract factory to handle various file formats. Users can subscribe to various services.
+
+Project Assumptions:
+
+    We will have different types of objects: Users, Subscriptions, Services.
+    Data about users, subscriptions, and services will be stored in JSON or TXT files.
+    We will use the abstract factory design pattern to handle different file types.
+    The system will process data and generate reports on user subscriptions.
+
+Class Division:
+
+    FileReader - Interface for reading files.
+
+    JsonFileReader and TxtFileReader - Classes implementing FileReader.
+
+    FileReaderFactory - Abstract factory for creating FileReader objects.
+
+    UserService - Class managing users and their subscriptions.
+
+    User, Subscription, Service - classes representing users, subscriptions, and services.
+
+Key Features of the Project:
+
+    Reading data about users, subscriptions, and services from files (JSON and TXT) using the FileReaderFactory class.
+    Creating User, Subscription, and Service objects based on the read data.
+    Adding the read objects to a list in the UserService class.
+    Implementation of a function allowing users to subscribe to a particular service.
+    Implementation of various functions in UserService, such as:
+        Searching for subscriptions for a specific user.
+        Finding users subscribed to a particular service.
+        Generating reports on active subscriptions.
+    Testing
+
