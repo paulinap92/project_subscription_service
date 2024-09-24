@@ -1,10 +1,9 @@
 # Subscription Management Service
 
 
-
 ## Project Overview
 
-The Subscription Management SERVICE (SMS) is designed to facilitate the management of user subscriptions to various services. The system supports reading data from both JSON and text files, leveraging the Abstract Factory design pattern to handle different file formats. Users can subscribe to services and generate reports on their subscriptions.
+The Subscription Management Service (SMS) is designed to facilitate the management of user subscriptions to various services. The system supports reading data from both JSON and text files, leveraging the Abstract Factory design pattern to handle different file formats. Users can subscribe to services and generate reports on their subscriptions.
 
 ## Project Assumptions
 
@@ -34,13 +33,11 @@ Here's an overview of the project's directory structure:
             ├── service.py
 app.py
 
-markdown
-
 
 - `file_repo/`: Contains classes for reading and processing data from files.
 - `model/`: Contains data models like `Subscription`, `User`, and `Service`.
 - `service/`: Contains repository classes and services for managing data.
-- `main.py`: The main script for running the project.
+- `app.py`: The main script for running the project.
 
 
 ### Installation
@@ -84,9 +81,10 @@ poetry add package_name
 
 
 The app.py script demonstrates how to use the data processors and repositories to manage services, subscriptions, and users.
+
 ## Example Usage
 
-Here's a breakdown of what the main.py script does:
+Here's a breakdown of what the app.py script does:
 
     File Paths: Specifies file paths for data in different formats:
 
@@ -102,7 +100,8 @@ Here's a breakdown of what the main.py script does:
  
 Create DataProcessors: Initializes data processors for different formats and sources:
 
-python
+
+      python
 
       d1 = DataProcessor.create_processor(DataFormat.TEXT, FactoryType.FROM_SERVICE)
       d2 = DataProcessor.create_processor(DataFormat.JSON, FactoryType.FROM_SERVICE)
@@ -183,8 +182,9 @@ Data Models
 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
 Contact
 
 For any questions or issues, please contact:
 
-    Email: paul
+    Email: paulinapiotrowskap@gmail.com
