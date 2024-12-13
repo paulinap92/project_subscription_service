@@ -1,5 +1,6 @@
 # Subscription Management Service
 
+![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)
 
 ## Project Overview
 
@@ -166,6 +167,24 @@ Data Models
       User: Represents a user with attributes such as name, surname, origin (from Destination enum), birthdate, and id_.
       Destination: Enum representing different destinations within Spain.
 
+## Testing
+
+This project uses `coverage` to measure unit test coverage. Follow these steps to generate and view the coverage report:
+
+1. **Run Tests with Coverage**  
+   ```bash
+   coverage run -m pytest
+
+2. **Generate an HTML Report**
+    ```bash
+    coverage html
+3. View the Report
+   
+Open the htmlcov/index.html file in your browser to see detailed coverage results.
+
+![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)
+
+The test coverage in this project is 100%.
 
 ## License
 
